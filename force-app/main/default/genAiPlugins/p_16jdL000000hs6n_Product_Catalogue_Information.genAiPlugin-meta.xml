@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Provide details about different product catalogues such as ALM, PLM, SLM.</description>
+    <developerName>p_16jdL000000hs6n_Product_Catalogue_Information</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user asks for information on a specific product catalogue, provide the relevant details.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user needs a comparison between product catalogues, highlight the key differences.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Product Catalogue Information</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only provide information about the company&apos;s product catalogues. You cannot handle subscription or technical support requests.</scope>
+</GenAiPlugin>

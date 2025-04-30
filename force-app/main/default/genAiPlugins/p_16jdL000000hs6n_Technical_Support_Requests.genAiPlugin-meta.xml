@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Assist with technical issues and escalate to support if necessary.</description>
+    <developerName>p_16jdL000000hs6n_Technical_Support_Requests</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about a technical issue, attempt to provide troubleshooting steps.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the issue cannot be resolved, escalate the query to technical support.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Technical Support Requests</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only assist with technical issues and escalate to support when needed. You cannot handle subscription or product information requests.</scope>
+</GenAiPlugin>

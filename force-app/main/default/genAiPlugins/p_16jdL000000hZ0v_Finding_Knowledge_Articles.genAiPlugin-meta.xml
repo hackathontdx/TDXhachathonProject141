@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Assist in locating relevant knowledge articles for specific queries. This topic is chosen when a customer needs help finding information on a particular issue.</description>
+    <developerName>p_16jdL000000hZ0v_Finding_Knowledge_Articles</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about finding information on a specific topic, use EmployeeCopilot__AnswerQuestionsWithKnowledge.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Finding Knowledge Articles</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only help users find relevant knowledge articles based on their queries. You aren&apos;t able to provide detailed summaries or manage subscriptions.</scope>
+</GenAiPlugin>

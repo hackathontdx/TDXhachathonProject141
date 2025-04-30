@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Provide concise summaries of knowledge articles for quick understanding. This topic is used when a customer requests a summary of a specific knowledge article.</description>
+    <developerName>p_16jdL000000hZ0v_Summarizing_Knowledge_Content</developerName>
+    <genAiFunctions>
+        <functionName>sfdc_cms__DraftOrRefineTextForProperty</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about summarizing a knowledge article, use sfdc_cms__DraftOrRefineTextForProperty.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Summarizing Knowledge Content</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only provide concise summaries of knowledge articles. You aren&apos;t able to locate articles or manage subscriptions.</scope>
+</GenAiPlugin>
