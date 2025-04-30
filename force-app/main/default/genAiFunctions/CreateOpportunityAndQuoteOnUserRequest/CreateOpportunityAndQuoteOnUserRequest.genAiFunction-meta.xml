@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates an Opportunity and Quote based on user request. User will provide Account Number for which the Opportunity and Quote should be created. User will also provide End Date of the Quote</description>
+    <invocationTarget>CreateQuoteAndQuoteLines</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>CreateOpportunityAndQuoteOnUserRequest</masterLabel>
+    <progressIndicatorMessage>Creating Quote...</progressIndicatorMessage>
+</GenAiFunction>

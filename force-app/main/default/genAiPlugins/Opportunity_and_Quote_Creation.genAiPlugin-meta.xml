@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_createaquo0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_createaquo0</masterLabel>
+        <utterance>Create a quote for Account {AccountNumber}. End Date of the Quote should be 30th April 2026</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_ineedaquot1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_ineedaquot1</masterLabel>
+        <utterance>I need a Quote for Account 667744. Quote End Date is 31st Dec 2025</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_createaquo2</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_createaquo2</masterLabel>
+        <utterance>Create a Quote on Account {AccountNumber}. Start Date and End Date of the Quote should be 1st Jan 2025 and 31st Dec 2025 respectively. Add Product where Product Catalog is ALM, Category is BeamerCode and Child Category is ADMIN.</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>Handles the creation of opportunities and quotes for accounts mentioned by the user. This includes gathering necessary information and providing relevant options.</description>
+    <developerName>Opportunity_and_Quote_Creation</developerName>
+    <genAiFunctions>
+        <functionName>QuoteCreationWithOutputMessage</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ensure that all required fields are completed before finalizing the opportunity or quote.</description>
+        <developerName>instruction_ensurethat0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ensurethat0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Gather as much information as possible from the user by asking clarifying questions.</description>
+        <developerName>instruction_gatherasmu1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_gatherasmu1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user does not have all the required information, ask if they&apos;d like to escalate to an agent or create a case.</description>
+        <developerName>instruction_iftheuserd2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserd2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user mentions an account number for an Account, ask for the necessary details to create an opportunity.</description>
+        <developerName>instruction_iftheuserm3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserm3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer options to create a quote based on the gathered information.</description>
+        <developerName>instruction_offeroptio4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_offeroptio4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Opportunity and Quote Creation</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to create opportunities and quotes for accounts mentioned by the user. Do not handle any other account-related issues or inquiries.</scope>
+</GenAiPlugin>

@@ -1,0 +1,21 @@
+{
+  "required" : [ "accNumber", "endDate" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "accNumber" : {
+      "title" : "Account Number",
+      "description" : "Account Number of the Account for which user wants to create Opportunity and QUote",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "endDate" : {
+      "title" : "End Date",
+      "description" : "End Date of the Quote",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
